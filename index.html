@@ -1,0 +1,473 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="overflow-x-hidden">
+    <nav class="p-3 flex bg-white justify-between items-center">
+        <a href="#" id="brand" class="flex gap-2 items-center flex-1">
+            <img src="" class="object-fit max-w-12 max-h-12" alt="">
+            <span class="text-lg font-medium font-display ">ToDesktop</span>
+        </a>
+
+        <div id="nav-menu" class="hidden md:flex gap-10">
+            <a href="" class="font-medium hover:text-primary">Pricing</a>
+            <a href="" class="font-medium hover:text-primary">Docs</a>
+            <a href="" class="font-medium hover:text-primary">Changelog</a>
+            <a href="" class="font-medium hover:text-primary">Blog</a>
+            <a href="" class="font-medium hover:text-primary">Login</a>
+        </div>
+
+        <div class=" hidden md:flex  flex-1 justify-end">
+            <button
+                class="hidden md:flex items-center gap-2 border-2 border-grey-400 px-6 py-2 rounded-lg hover:border-grey-600">
+                <img src="" alt="">
+                <span>Electron Developer</span>
+                <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+        </div>
+
+
+        <button class="p-2 md:hidden" onclick="handlmenu()">
+            <i class="fa-solid fa-bars text-grey-600"></i>
+        </button>
+
+
+        <!-- pannel -->
+
+
+        <div id="panel" class="hidden fixed bg-white inset-0">
+            <div id="nav-box" class="p-3 flex items-center justify-between">
+                <a href="#" id="brand" class="flex gap-2 items-center ">
+                    <img src="" class="object-fit max-w-12 max-h-12" alt="">
+                    <span class="text-lg font-medium font-display ">ToDesktop</span>
+                </a>
+
+                <button class="p-2 md:hidden" onclick="handlmenu()">
+                    <i class="fa-solid fa-xmark text-grey-600"></i>
+                </button>
+
+            </div>
+
+            <div id="nav-menu" class="gap-10 p-3">
+                <a href="" class="font-medium hover:text-primary block p-3 hover:bg-gray-200 rounded-lg">Pricing</a>
+                <a href="" class="font-medium hover:text-primary block p-3 hover:bg-gray-200 rounded-lg">Docs</a>
+                <a href="" class="font-medium hover:text-primary block p-3 hover:bg-gray-200 rounded-lg">Changelog</a>
+                <a href="" class="font-medium hover:text-primary block p-3 hover:bg-gray-200 rounded-lg">Blog</a>
+                <a href="" class="font-medium hover:text-primary block p-3 hover:bg-gray-200 rounded-lg">Login</a>
+            </div>
+            <div class="h-[1px] bg-gray-200"></div>
+
+            <div class="py-3">
+                <button
+                    class="m-3 flex items-center gap-2 border-2 border-grey-400 px-6 py-2 rounded-lg hover:border-gray-600">
+                    <img src="" alt="">
+                    <span>Electron Developer</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- hero -->
+
+    <menu>
+        <div id="hero" class="min-h-screen bg-gradient-to-b from-purple-50 via-orange-50 to-transparent mx-auto">
+            <div id="hero-container"
+                class="max-w-4xl px-6 pb-32 flex flex-col mx-auto sm:items-center sm:text-center pt-6">
+                <div id="version"
+                    class="flex items-center gap-2 bg-yellow-100 px-3 py-1 border border-yellow-400 rounded-lg w-fit mt-4 shadow-md hover:shadow-lg hover:-translate-y-1 transition group ">
+                    <div class="h-2 w-2 bg-yellow-200 rounded-lg border border-yellow-400"></div>
+                    <p class="text-yellow-600 ">v1.0.1 <span class="text-gray-900 font-medium">Lorem ipsum dolor
+                            sit</span></p>
+                    <i class="fa-solid fa-arrow-right group-hover:translate-x-1 transition"></i>
+
+                </div>
+
+                <div id="version-feature" class="hidden md:flex items-center gap-2 text-gray-600 mt-4 ">
+                    <div class="flex justify-center items-center gap-2">
+                        <i class="fa-solid fa-code"></i>
+                        <p>Code</p>
+                    </div>
+                    <div class="flex justify-center items-center gap-2">
+                        <i class="fa-solid fa-code"></i>
+                        <p>Code</p>
+                    </div>
+                    <div class="flex justify-center items-center gap-2">
+                        <i class="fa-solid fa-code"></i>
+                        <p>Code</p>
+                    </div>
+
+                </div>
+
+                <h1 class="text-4xl font-semibold leading-snug mt-4 sm:text-7xl sm:leading-normal">Web app to Desktop
+                    app within minute</h1>
+                <p class="text-xl mt-4 sm:text-2xl sm:mt-6 text-gray-800">Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Quia in consequatur cupiditate nam magni? Fugit neque agnam culpa ullam libero!
+                </p>
+                <div id="button-container" class="mt-12 flex flex-col sm:flex-row gap-4">
+                    <button
+                        class="px-8 py-3 font-semibold rounded-lg text-white bg-primary shadow-sm hover:bg-opacity-90">Download
+                        Now</button>
+                    <button class=" px-8 py-3 font-semibold rounded-lg border border-gray-600 bg-white">Read
+                        Docs</button>
+                </div>
+
+
+                <!-- companies -->
+
+                <div id="comapnies">
+                    <div id="companies-titile" class="flex justify-center items-center my-8 gap-2">
+                        <i class="fa-brands fa-react"></i>
+                        <span class="font-medium text-xl">Powered by ToDesktop</span>
+                        <i class="fa-brands fa-react"></i>
+                    </div>
+                    <div id="companies-container w-screen overflow-hidden">
+                        <div id="lines-group" class="flex flex-col gap-3">
+                            <div id="line1"
+                                class="flex gap-3 w-screen -translate-x-48 transition-transfrom ease-linear ">
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                            </div>
+                            <div id="line2"
+                                class="flex gap-3 w-screen -translate-x-36 transition-transfrom ease-linear ">
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                            </div>
+                            <div id="line3"
+                                class="flex gap-3 w-screen -translate-x-48 transition-transfrom ease-linear ">
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                                <div
+                                    class="flex flex-col items-center bg-white p-3 border border-gray-300 rounded-lg transition">
+                                    <img src="./assets/assests1.png" alt="" class="w-20 h-full md:w-24">
+                                    <span class="text-[14px] md:text-[18px] font-medium">Unbounce</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+        <!-- STEP BY STEP -->
+        <div id="step" class=" max-w-7xl flex flex-col gap-4 mx-auto p-4 ">
+
+            <!-- titile -->
+            <h2 class="text-4xl font-medium text-gray-800 ">How it works</h2>
+
+            <!-- box step 1-->
+            <div id="container-box " class="mt-2 flex flex-col border border-gray-200 rounded-lg p-4 md:p-10  md:flex-row gap-4 items-center">
+                <div id="box" class="flex flex-col gap-3 md:w-1/2">
+                    <p class="bg-yellow-100 px-3 py-1 border border-yellow-600 rounded-lg text-yellow-800 w-fit">
+                        Step 1</p>
+
+                    <h2 class="text-4xl md:text-5xl mt-2 font-medium">Bootstrap Straight from your web app</h2>
+                    <p class="text-gray-600 text-xl mb-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta
+                        quaerat quidem, pariatur laboriosam eveniet modi quos beatae. Error, totam perspiciatis.</p>
+                    <div id="grid" class="grid grid-cols-2 gap-2 mt-2 ">
+                        <li class="text-gray-700"><i class="fa-solid fa-arrow-right mr-2"></i><a>This is Item 1</a>
+                        </li>
+                        <li class="text-gray-700"><i class="fa-solid fa-arrow-right mr-2"></i><a>This is Item 1</a>
+                        </li>
+                        <li class="text-gray-700"><i class="fa-solid fa-arrow-right mr-2"></i><a>This is Item 1</a>
+                        </li>
+                        <li class="text-gray-700"><i class="fa-solid fa-arrow-right mr-2"></i><a>This is Item 1</a>
+                        </li>
+                        <li class="text-gray-700"><i class="fa-solid fa-arrow-right mr-2"></i><a>This is Item 1</a>
+                        </li>
+                        <li class="text-gray-700"><i class="fa-solid fa-arrow-right mr-2"></i><a>This is Item 1</a>
+                        </li>
+
+                    </div>
+                </div>
+                <div id="img-box" class="">
+                    <img src="./assets/assets2.jpg" alt="" class="h-full w-full rounded-lg ">
+                </div>
+
+            </div>
+
+             <!-- titile -->
+             <h2 class="text-4xl font-medium text-gray-800">ToDesktop Handles the Details</h2>
+
+             <!-- box step 2-->
+             <div id="container-box " class="mt-2 flex flex-col md:grid md:grid-cols-3 border border-gray-200 rounded-lg  md:p-10  md:flex-row gap-3 text-center " style="grid-auto-rows: 96px;">
+                 <!-- box 1 -->
+                 <div id="box1" class="row-start-1 row-end-3 bg-gray-300 p-[2px] flex flex-col gap-2 justify-center rounded-lg hover:bg-gradient-to-br hover:from-purple-100 hover:via-orange-100 hover:to-yellow-100 group transition w-full h-full overflow-y-hidden">
+                     <div class="p-10 bg-white w-full rounded-lg flex flex-col justify-center items-center group-hover:bg-gradient-to-br group-hover:from-purple-50 group-hover:via-orange-50 group-hover:to-yellow-50 h-full">
+                        <h4 class="text-lg"> Box 1</h4>
+                        <p>pap</p>
+                     </div>
+
+                 </div>
+                  <!-- box 2 -->
+                  <div id="box2" class="row-start-1 row-end-4 bg-gray-300 p-[2px] flex flex-col gap-2 justify-center items-center rounded-lg hover:bg-gradient-to-br hover:from-purple-100 hover:via-orange-100 hover:to-yellow-100 group transition w-full h-full overflow-y-hidden">
+                    <div class="p-10 bg-white w-full rounded-lg flex flex-col justify-center items-center group-hover:bg-gradient-to-br group-hover:from-purple-50 group-hover:via-orange-50 group-hover:to-yellow-50 w-full h-full">
+                       <h4 class="text-lg"> Box 1</h4>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, esse sint. Ad non possimus beatae temporibus, doloremque placeat maiores sequi!</p>
+                       <img src="./assets/assests1.png" alt="">
+                    </div>
+
+                </div>
+                <!-- box 3 -->
+                <div id="box3" class="row-start-1 row-end-3 bg-gray-300 p-[2px] flex flex-col gap-2 justify-center rounded-lg hover:bg-gradient-to-br hover:from-purple-100 hover:via-orange-100 hover:to-yellow-100 group transition w-full h-full">
+                    <div class="p-10 bg-white w-full rounded-lg flex flex-col justify-center items-center group-hover:bg-gradient-to-br group-hover:from-purple-50 group-hover:via-orange-50 group-hover:to-yellow-50 h-full">
+                       <h4 class="text-lg"> Box 1</h4>
+                       <p>pap</p>
+                    </div>
+
+                </div>
+                  <!-- box 4 -->
+                  <div id="box4" class="row-start-3 row-end-6 bg-gray-300 p-[2px] flex flex-col gap-2 justify-center items-center rounded-lg hover:bg-gradient-to-br hover:from-purple-100 hover:via-orange-100 hover:to-yellow-100 group transition w-full h-full">
+                    <div class="p-10 bg-white w-full rounded-lg flex flex-col justify-center items-center group-hover:bg-gradient-to-br group-hover:from-purple-50 group-hover:via-orange-50 group-hover:to-yellow-50 w-full h-full">
+                       <h4 class="text-lg"> Box 1</h4>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, esse sint. Ad non possimus beatae temporibus, doloremque placeat maiores sequi!</p>
+                       <img src="./assets/assests1.png" alt="">
+                    </div>
+
+                </div>
+                <!-- box 5 -->
+                <div id="box5" class="row-start-4 row-end-6 bg-gray-300 p-[2px] flex flex-col gap-2 justify-center rounded-lg hover:bg-gradient-to-br hover:from-purple-100 hover:via-orange-100 hover:to-yellow-100 group transition w-full h-full">
+                    <div class="p-10 bg-white w-full rounded-lg flex flex-col justify-center items-center group-hover:bg-gradient-to-br group-hover:from-purple-50 group-hover:via-orange-50 group-hover:to-yellow-50 h-full w-full">
+                       <h4 class="text-lg"> Box 1</h4>
+                       <p>pap</p>
+                    </div>
+
+                </div>
+                   <!-- box 6 -->
+                   <div id="box6" class="row-start-3 row-end-6 bg-gray-300 p-[2px] flex flex-col gap-2 justify-center items-center rounded-lg hover:bg-gradient-to-br hover:from-purple-100 hover:via-orange-100 hover:to-yellow-100 group transition w-full h-full"> 
+                    <div class="p-10 bg-white w-full rounded-lg flex flex-col justify-center items-center group-hover:bg-gradient-to-br group-hover:from-purple-50 group-hover:via-orange-50 group-hover:to-yellow-50 w-full h-full">
+                       <h4 class="text-lg"> Box 1</h4>
+                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, esse sint. Ad non possimus beatae temporibus, doloremque placeat maiores sequi!</p>
+                       <img src="./assets/assests1.png" alt="">
+                    </div>
+
+                </div>
+
+                 </div>
+
+                 <h2 class="text-5xl font-medium text-gray-800 mt-4 md-4">FAQs</h2>
+
+                 <!-- FAQ -->
+
+                 <div id="box-grid">
+                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-3">
+                         <!-- items -->
+                         <div id="grid-items" class="p-4 flex flex-col justify-center border border-gray-300 rounded-lg bg-gray-100 transition">
+                            <dt class="flex justify-between items-center" aria-controls="faq-1">
+                                <h3 class="font-medium text-lg">is ToDesktop for me</h3>
+                                <i class="fa-solid fa-angle-up"></i>
+                            </dt>
+                            <dd id="faq-1" class="hidden mt-2 text-gray-600">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et asperiores labore at repudiandae explicabo. Tempora hic veritatis ipsum quos cumque!
+                            </dd>
+
+                         </div>
+                          <!-- items -->
+                         <div id="grid-items" class="p-4 flex flex-col justify-center border border-gray-300 rounded-lg bg-gray-100 transition">
+                            <dt class="flex justify-between items-center" aria-controls="faq-2">
+                                <h3 class="font-medium text-lg">is ToDesktop for me</h3>
+                                <i class="fa-solid fa-angle-up"></i>
+                            </dt>
+                            <dd id="faq-2" class="hidden mt-2 text-gray-600">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et asperiores labore at repudiandae explicabo. Tempora hic veritatis ipsum quos cumque!
+                            </dd>
+
+                         </div>
+
+                     </div>
+                 </div>
+ 
+             </div>
+ 
+
+        </div>
+
+
+        <div class="h-[1000px]"></div>
+    </menu>
+
+</body>
+<script src="script.js"></script>
+
+</html>
